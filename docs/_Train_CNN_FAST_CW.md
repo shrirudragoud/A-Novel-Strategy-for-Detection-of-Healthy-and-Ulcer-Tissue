@@ -1,4 +1,4 @@
-## Best Run: CNN Embeddings + PLS + SVM (fast preset, cw + reweight)
+## Train: CNN Embeddings + PLS + SVM (fast preset, cw + reweight)
 
 ### Command used
 ```bash
