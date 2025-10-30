@@ -1,0 +1,39 @@
+# Dataset images (use Google Drive instead)
+dataset/images/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE and system files
+.vscode/
+.vscode-server/
+.windsurf-server/
+.cursor-server/
+.cursor/
+.idea/
+*.swp
+*.swo
+*~
+.bash_history
+
+# Studio/system configs
+.lightning_studio/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+env/
