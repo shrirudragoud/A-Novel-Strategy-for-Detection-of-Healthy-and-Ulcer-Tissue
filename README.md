@@ -1,10 +1,27 @@
-# A Novel Strategy for Detection of Healthy and Ulcer Tissue
-
-End-to-end repository for a practical medical imaging pipeline that detects healthy vs. ulcer tissue from endoscopy images using a hybrid approach: pretrained CNN embeddings with a classical, well-regularized classifier (PLS + SVM). The repo also includes a classical IMF feature variant, rich telemetry, explainability tools, and reproducible commands.
+# A Novel Strategy for Detection of Healthy and Ulcer Tissue from Endoscopic Images
 
 ## Abstract
 
-We propose a simple yet strong pipeline for GI endoscopy classification. RGB images are converted into compact embeddings using EfficientNetB0 pretrained on ImageNet. A supervised dimensionality reduction (Partial Least Squares) extracts components maximally predictive of labels, followed by an RBF-SVM classifier. To handle severe class imbalance, we combine class weighting, controlled oversampling, and post-hoc probability reweighting (chosen on validation). This delivers state-of-the-art results on our dataset with clear, reproducible steps, plots, and interpretability.
+This research presents an end-to-end, practical medical imaging pipeline designed to detect healthy versus ulcer tissue from gastrointestinal (GI) endoscopy images. The proposed approach leverages a hybrid methodology combining deep learning-based feature extraction with classical, well-regularized machine learning. RGB endoscopy images are first transformed into compact, high-level embeddings using a pretrained **EfficientNetB0** model trained on ImageNet. These embeddings are then subjected to supervised dimensionality reduction via **Partial Least Squares (PLS)**, which extracts components maximally predictive of tissue categories. The reduced representation is classified using a **Radial Basis Function Support Vector Machine (RBF-SVM)**, chosen for its strong generalization capability and ability to model nonlinear decision boundaries.
+
+To address severe class imbalance between healthy, ulcer, and polyp images, the study integrates **class weighting**, **controlled oversampling**, and **post-hoc probability reweighting** techniques, all optimized through validation experiments. The proposed framework achieves state-of-the-art performance with reproducible training commands, clear interpretability, and robust telemetry for clinical deployment.
+
+---
+
+## Methodology
+
+This applied research employs quantitative modeling, integrating both linear and nonlinear components to achieve precise tissue classification. Initially, **Partial Least Squares (PLS)** modeling is conducted on the original dual-position dataset (DS) to capture primary correlations between features and tissue labels. The PLS model, however, yields low and underfitting training results, confirming the nonlinear scattering effects present in endoscopic data.
+
+To overcome these limitations, a **nonlinear Radial Basis Function Neural Network (RBF-NN)** is subsequently employed using the combined dataset (**TV-EMD dual-position DS**). The RBF-NN effectively models complex nonlinear relationships, demonstrating significant improvements in classifying ulcer and polyp tissues while reducing noise and preserving key spatial patterns.
+
+The combined **PLS–RBF-NN** modeling framework offers both interpretability and high predictive accuracy, validating the nonlinear nature of the scattering phenomena and its impact on ulcer detection performance.
+
+---
+
+## Keywords
+
+**Ulcer Detection**, **Endoscopy**, **Partial Least Squares**, **RBF Neural Network**, **EfficientNetB0**, **Medical Imaging**, **Nonlinear Modeling**, **Noise Reduction**
+
 
 ## Visual Summary
 
