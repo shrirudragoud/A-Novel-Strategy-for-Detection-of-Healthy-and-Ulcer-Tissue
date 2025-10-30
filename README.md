@@ -14,7 +14,8 @@ Healthy and lesion-focused occlusion sensitivity maps (left: original|overlay co
 
 | Healthy Tissue | Ulcer Lesion | Polyp Lesion |
 |:--------------:|:------------:|:------------:|
-| ![Healthy example](artifacts/explain/occlusion_composite_5e59c7fdb16c4228_7938_healthy.png) | ![Ulcer example](artifacts/explain/occlusion_composite_2fc3db471f9d44c0_1724_ulcer.png) | ![Polyp example](artifacts/explain/occlusion_composite_131368cc17e44240_28955_polyp.png) |
+| ![Healthy example](artifacts/explain/occlusion_composite_5e59c7fdb16c4228_7938_healthy.png) | ![Ulcer example](artifacts/explain/occlusion_composite_d626f4f4a5ac4785_48402_ulcer.png
+) | ![Polyp example](artifacts/explain/occlusion_composite_131368cc17e44240_28955_polyp.png) |
 
 ### Evaluation Metrics (Best Run: `cnn_fast_cw`)
 
