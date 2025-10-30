@@ -20,8 +20,7 @@ Healthy and lesion-focused occlusion sensitivity maps (left: original|overlay co
 
 | Tsne_test_balanced (Test) | ROC Curves (Test) |
 |:----------------------:|:-----------------:|
-| ![Tsne_test Matrix](artifacts/cnn_fast_cw/tsne_test_balanced.png) | ![Confusion_test](artifacts/cnn_fast_cw/confusion_test.png) |
-
+| ![Tsne_test Matrix](artifacts/cnn_fast_cw_(Best_Model)/tsne_test_balanced.png) | ![Confusion_test](artifacts/cnn_fast_cw/confusion_test.png) |
 ## Results (Best Run: cnn_fast_cw)
 
 ### Performance Metrics
